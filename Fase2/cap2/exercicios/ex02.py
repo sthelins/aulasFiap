@@ -19,3 +19,44 @@
 #O programa deverá exibir o valor Bruto da viagem, o valor do desconto, valor líquido da viajante
 #e o valor médio por viajante
 
+print("Por favor, Digite os números a seguir de acordo com a classe:")
+classe = int(input("1 - Econômica | 2 - Executiva | 3 - Primeira classe  "))
+
+viajantes = int(input("Quantos serão os viajantes que moram na mesma casa?  "))
+valorBruto = float(input("Informe o valor bruto da viagem:  "))
+valorDesconto = 0
+valorLiquido = 0
+
+if classe == 1:
+    if viajantes == 1:
+        print("Você não ganhou descontos")
+    if viajantes == 2:
+        valorDesconto = valorBruto * 0.03
+    if viajantes == 3:
+        valorDesconto = valorBruto * 0.04
+    if viajantes >= 4:
+        valorDesconto = valorBruto * 0.05
+elif classe == 2:
+    if viajantes == 1:
+        print("Você não ganhou descontos")
+    if viajantes == 2:
+        valorDesconto = valorBruto * 0.05
+    if viajantes == 3:
+        valorDesconto = valorBruto * 0.07
+    if viajantes >= 4:
+        valorDesconto = valorBruto * 0.08
+elif classe == 3:
+    if viajantes == 1:
+        print("Você não ganhou descontos")
+    if viajantes == 2:
+        valorDesconto = valorBruto * 0.1
+    if viajantes == 3:
+        valorDesconto = valorBruto * 0.15
+    if viajantes >= 4:
+        valorDesconto = valorBruto * 0.2
+else:
+    print("Categoria inexistente")
+
+valorLiquido = valorBruto - valorDesconto
+print( f"Voces ganharam um desconto de R${valorDesconto},portanto o valor da viajem ficará R${valorLiquido}")
+
