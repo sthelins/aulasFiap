@@ -1,3 +1,5 @@
+#Sthefany Lins de Albuquerque
+
 #entrada - quantidade de votos de cada dia da semana
 #calculo - qual o mais votado
 #saída - o mais votado

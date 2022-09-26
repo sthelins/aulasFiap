@@ -1,3 +1,5 @@
+#Sthefany Lins de Albuquerque
+
 #entrada - assinatura do cliente, faturamento anual
 #calcular valor do bonus
 #saída - o valor do bonus e o que o cliente deve pagar
