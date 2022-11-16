@@ -1,0 +1,21 @@
+close() - fecha o arquivo
+
+flush() - libera o buffer interno.
+
+read() - faz a leitura do arquivo inteiro e retorna uma string
+
+readline() - faz a leitura e retorna uma linha de um arquivo
+
+readlines() - faz a leitura do arquivo inteiro e retorna uma lista com cada linha
+
+seek(#coluna,posicao) - permite controlar a posição do cursor do arquivo
+
+tell() - retorna a posição atual do cursor do arquivo
+
+truncate(#tamanho) - redimensiona (trunca) o arquivo para o tamanho especificado
+
+writable() - retorna o valor True se pudemos escrever no arquivo
+
+write(#string) - grava o arquivo
+
+writelines(#listta_string) - grava cada elemnto de uma lista de strings no arquivo
